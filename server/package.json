@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "toxicityChecker.js",
+  "scripts": {
+    "start": "node toxicityChecker.js",
+    "dev": "nodemon toxicityChecker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "mongoose": "^8.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": ["toxicity", "ai", "tensorflow", "analysis"],
+  "author": "",
+  "license": "ISC",
+  "description": "ToxGuard backend server for text toxicity analysis"
+}
